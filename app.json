@@ -1,0 +1,12 @@
+{
+  "name": "famplayReactNative",
+  "displayName": "famplayReactNative",
+  "expo": {
+    "name": "famplayReactNative",
+    "slug": "famplayReactNative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
