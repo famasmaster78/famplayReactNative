@@ -6,35 +6,33 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
+/* Import andre components */
+import Home from "./Home";
+import Film from "./Film";
+import Serier from "./Serier";
+import Login from "./Login";
+
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
+  		<Home />
   );
 }
 
 function FilmScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Film!</Text>
-    </View>
-  );
+	return (
+		<Film />
+	);
 }
 
 function SerierScreen() {
 	return (
-	  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-		<Text>Serier!</Text>
-	  </View>
+		<Serier />
 	);
 }
 
  function LoginScreen() {
 	return (
-	  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-		<Text>Login!</Text>
-	  </View>
+		<Login />
 	);
 }
 
@@ -46,7 +44,7 @@ export default function Navigator() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={FilmScreen} />
+        <Tab.Screen name="Film" component={FilmScreen} />
 		<Tab.Screen name="Serier" component={SerierScreen} />
 		<Tab.Screen name="Login" component={LoginScreen} />
       </Tab.Navigator>
